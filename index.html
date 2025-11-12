@@ -6,7 +6,7 @@
     <title>Navjyoti Home Care – Home Healthcare</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body id="page-body">
     <header class="site-header">
       <div class="logo">Navjyoti Home Care</div>
       <nav class="main-nav">
@@ -146,10 +146,15 @@
         <h2>Real stories from families who trust Navjyoti Home Care</h2>
         <div class="testimonial">
           <blockquote>“Support beyond expectations.”</blockquote>
-          <cite>— M. Lee T.</cite>
+          <cite>-- M. Lee T.--</cite>
         </div>
-        <div class="testimonial-video">
-          <button>Watch Video</button>
+        <div class="testimonial-text">
+          <p>
+            "Navjyoti Home Care transformed my mother's life. Their caregivers
+            are not only professional but also genuinely caring. They provided
+            the support she needed to regain her independence after surgery."
+          </p>
+          
         </div>
       </div>
     </section>
@@ -262,24 +267,37 @@
 
     <script>
       // Mobile menu toggle
-      document.addEventListener("DOMContentLoaded", function () {
-        const hamburger = document.querySelector(".hamburger");
+      document.addEventListener('DOMContentLoaded', function () {
+        const body = document.getElementById('page-body');
+        const mobileMenuButton = document.getElementById('mobile-menu');
         const nav = document.querySelector(".main-nav");
+        const navLinks = nav.querySelectorAll('a');
 
-        hamburger.addEventListener("click", () => {
+        mobileMenuButton.addEventListener('click', () => {
           nav.classList.toggle("active");
+          mobileMenuButton.classList.toggle('is-active');
+          body.classList.toggle('menu-open');
+        });
+
+        // Close menu when a link is clicked
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            // Only close if the menu is currently active
+            if (nav.classList.contains('active')) {
+              nav.classList.remove('active');
+              mobileMenuButton.classList.remove('is-active');
+              body.classList.remove('menu-open');
+            }
+          });
         });
       });
     </script>
 
     <script>
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
+        anchor.addEventListener('click', function (e) {
           e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            target.scrollIntoView({ behavior: "smooth" });
-          }
+          document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
         });
       });
     </script>

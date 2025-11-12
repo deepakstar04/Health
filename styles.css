@@ -80,9 +80,39 @@ a {
 .mobile-menu {
   display: none;
   font-size: 28px;
+  z-index: 1001; /* Ensure it's above other header content */
   cursor: pointer;
 }
 
+/* Animated Hamburger Icon */
+.hamburger {
+  display: inline-block;
+  width: 28px;
+  height: 24px;
+  position: relative;
+}
+
+.hamburger-box {
+  position: absolute;
+  width: 28px;
+  height: 24px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 28px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 4px;
+  position: absolute;
+  transition: transform 0.25s ease-in-out;
+}
+
+.hamburger-inner {
+  top: 50%;
+  transform: translateY(-50%);
+}
 /* Hero */
 .hero {
   padding: 4em 0;
@@ -390,23 +420,63 @@ a {
   margin-top: 1.5em;
   font-size: 0.9em;
 }
+
+/* Prevent scrolling when menu is open */
+.menu-open {
+  overflow: hidden;
+}
+
 @media (max-width: 768px) {
    .main-nav {
     display: none;
     flex-direction: column;
-    position: absolute;
-    top: 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: fixed; /* Changed from absolute */
+    top: 0;
     left: 0;
-    width: 100%;
-    background: #fff;
-    border-top: 1px solid #ddd;
-    padding: 15px 0;
-    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(250, 246, 240, 0.85); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* The "buler" effect */
+    -webkit-backdrop-filter: blur(10px);
     z-index: 999;
+  }
+
+  .main-nav a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #5a3c1f;
   }
 
   .main-nav.active {
     display: flex;
+  }
+
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    content: '';
+    display: block;
+  }
+  .hamburger-inner::before {
+    top: -10px;
+  }
+  .hamburger-inner::after {
+    bottom: -10px;
+  }
+
+  /* Animate to 'X' */
+  .mobile-menu.is-active .hamburger-inner {
+    transform: rotate(45deg);
+  }
+  .mobile-menu.is-active .hamburger-inner::before {
+    top: 0;
+    transform: rotate(-90deg);
+  }
+  .mobile-menu.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
   }
 
   .btn.btn-primary {
@@ -424,9 +494,6 @@ a {
   .hero .hero-content {
     width: 100%;
     text-align: center;
-  }
-  .site-header .main-nav {
-    display: none; /* or use mobile nav toggle */
   }
   
   .about-container {

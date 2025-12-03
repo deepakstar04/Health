@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Navjoti Home Health care</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/about.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Navjoti Home Health care</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/about.css">
 </head>
+
 <body>
 
-      <header class="header">
+  <header class="header">
     <div class="header-container">
       <div class="header-inner">
         <a href="/" class="logo">
@@ -26,8 +28,13 @@
           <a href="/">Home</a>
           <a href="/About.html">About</a>
           <div class="dropdown" id="servicesDropdown">
-            <button id="servicesBtn">Services ▼</button>
+            <a href="/services.html" id="servicesBtn" class="services-toggle" style="display: flex; align-items: center; gap: 6px;" aria-haspopup="true" aria-expanded="false">
+              <span>Services</span>
+              <span class="caret" aria-hidden="true">▾</span>
+            </a>
             <div class="dropdown-panel">
+              <a href="/services.html" class="view-all" style="padding:8px 10px; font-weight:600;">All services</a>
+              <div style="height:6px"></div>
               <a href="#primary-care">Primary Care</a>
               <a href="#home-nursing">Home Nursing</a>
               <a href="#physiotherapy">Physiotherapy</a>
@@ -38,7 +45,6 @@
           <a href="#contact">Contact</a>
           <a href="#blog">Blog</a>
         </nav>
-
         <div style="display: flex; align-items: center; gap: 12px">
           <a href="#book" class="cta">Book a Nurse</a>
           <button class="mobile-toggle" id="mobileOpenBtn" aria-label="Open menu">
@@ -92,63 +98,113 @@
     <div class="about-container">
       <div class="about-image-desktop">
         <img src="assest/img/about-us.jpg" alt="About Us Image">
-        </div>
-        <div class="about-text">
-          <h2>About Navjyoti Home Care</h2>
-          <p>
-            Navjyoti Home Care is dedicated to providing compassionate and professional home healthcare services. Our mission is to enhance the quality of life for our patients by delivering personalized care in the comfort of their own homes.
-          </p>
-            <p>
-                With a team of experienced healthcare professionals, we offer a wide range of services including nursing care, physiotherapy, post-surgery care, and teleconsultation. We believe in treating each patient with dignity and respect, ensuring their health and well-being are our top priorities.
-            </p>
-            <p>
-                At Navjyoti Home Care, we are committed to excellence in healthcare delivery, fostering a supportive environment for both patients and their families. Our goal is to provide reliable and accessible care that meets the unique needs of each individual we serve.
-            </p>
-        </div>
       </div>
+      <div class="about-text">
+        <h2>About Navjyoti Home Care</h2>
+        <p>
+          Navjyoti Home Care is dedicated to providing compassionate and professional home healthcare services. Our
+          mission is to enhance the quality of life for our patients by delivering personalized care in the comfort of
+          their own homes.
+        </p>
+        <p>
+          With a team of experienced healthcare professionals, we offer a wide range of services including nursing care,
+          physiotherapy, post-surgery care, and teleconsultation. We believe in treating each patient with dignity and
+          respect, ensuring their health and well-being are our top priorities.
+        </p>
+        <p>
+          At Navjyoti Home Care, we are committed to excellence in healthcare delivery, fostering a supportive
+          environment for both patients and their families. Our goal is to provide reliable and accessible care that
+          meets the unique needs of each individual we serve.
+        </p>
+      </div>
+    </div>
     </div>
     <section class="why-choose section">
-    <div class="container">
-      <h2>Trusted Care, Tailored for Every Senior</h2>
-      <ul class="why-list"> 
-        <li> <strong>Experienced Caregivers</strong><br />Professional, trained staff with special care expertise</li>
-        <li> <strong>Comfort of Home</strong><br />Care delivered in a familiar setting</li>
-        <li> <strong>Personalized Care Plans</strong><br />Customized services to meet individual needs</li>
-        <li> <strong>24/7 Support</strong><br />Round-the-clock assistance for peace of mind</li>
-        <li> <strong>Comprehensive Services</strong><br />Wide range of healthcare services under one roof</li>
-        <li> <strong>Compassionate Approach</strong><br />Empathetic care focused on dignity and respect</li>
-      </ul>
-    </div>
-    </section>
-    <section class="testimonials-container">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonial">
-      <p>"Navjyoti Home Care provided exceptional care for my elderly mother. The caregivers were professional, compassionate, and attentive to her needs. I highly recommend their services!"</p>
-      <span>- Satisfied Client</span>
-    </div>
-    <div class="testimonial">
-      <p>"The team at Navjyoti Home Care made a significant difference in my father's recovery after surgery. Their personalized care plan and round-the-clock support were invaluable."</p>
-      <span>- Grateful Family</span>
-    </div>
-    <div class="testimonial">
-      <p>"Navjyoti Home
-    Care's physiotherapy services helped me regain my mobility and independence. The therapists were skilled and encouraging throughout my rehabilitation."</p>
-      <span>- Happy Patient</span>
-    </div>
-    </section>
-    <section class="contact-section" id="contact">
-    <div class="contact-container">
-      <div class="contact-info">
-        <h2>Contact Navjyoti Home Care</h2>
-        <p>If you have any questions or would like to learn more about our services, please feel free to reach out to us. We're here to help!</p>
-        <ul>
-          <li><strong>Phone:</strong> +91 8923187677</li>
-          <li><strong>Email:</strong> info@navjyotihomecare.com</li>    
+      <div class="container">
+        <h2>Trusted Care, Tailored for Every Senior</h2>
+        <ul class="why-list">
+          <li> <strong>Experienced Caregivers</strong><br />Professional, trained staff with special care expertise</li>
+          <li> <strong>Comfort of Home</strong><br />Care delivered in a familiar setting</li>
+          <li> <strong>Personalized Care Plans</strong><br />Customized services to meet individual needs</li>
+          <li> <strong>24/7 Support</strong><br />Round-the-clock assistance for peace of mind</li>
+          <li> <strong>Comprehensive Services</strong><br />Wide range of healthcare services under one roof</li>
+          <li> <strong>Compassionate Approach</strong><br />Empathetic care focused on dignity and respect</li>
         </ul>
       </div>
-    </div>
-    
-  </section>
-    
+    </section>
+    <section class="testimonials-container">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial">
+        <p>"Navjyoti Home Care provided exceptional care for my elderly mother. The caregivers were professional,
+          compassionate, and attentive to her needs. I highly recommend their services!"</p>
+        <span>- Satisfied Client</span>
+      </div>
+      <div class="testimonial">
+        <p>"The team at Navjyoti Home Care made a significant difference in my father's recovery after surgery. Their
+          personalized care plan and round-the-clock support were invaluable."</p>
+        <span>- Grateful Family</span>
+      </div>
+      <div class="testimonial">
+        <p>"Navjyoti Home
+          Care's physiotherapy services helped me regain my mobility and independence. The therapists were skilled and
+          encouraging throughout my rehabilitation."</p>
+        <span>- Happy Patient</span>
+      </div>
+    </section>
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>Contact Navjyoti Home Care</h2>
+          <p>If you have any questions or would like to learn more about our services, please feel free to reach out to
+            us. We're here to help!</p>
+          <ul>
+            <li><strong>Phone:</strong> +91 8923187677</li>
+            <li><strong>Email:</strong> info@navjyotihomecare.com</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-logo"><strong>Navjyoti Home Care</strong></div>
+        <!-- contact info -->
+
+        <nav class="footer-nav">
+          <a href="/About.html">About Us</a>
+          <a href="/services.html">Services</a>
+          <a href="#who-we-serve">Who We Serve</a>
+          <a href="#pricing">Pricing Plans</a>
+          <a href="#care-team">Caregivers & Team</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+        <div class="footer-contact">
+          <p>
+            Call :- <a href="tel:+918923187677">+91 8923187677</a>
+            <a href="tel:+919266421581">+91 9266421581</a>
+          </p>
+          <p>
+            Email :-
+            <a href="mailto:infi@navjyotihomecare.com">infi@navjyotihomecare.com</a>
+          </p>
+          <p>
+            Address :-
+            <a href="#"> LG-20E Gaur City centre sector 4 garter Noida</a>
+          </p>
+        </div>
+        <br />
+        <nav class="footer-nav social">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </nav>
+        <p>© 2025 Navjyoti Home Care | Privacy Policy | Terms of Service</p>
+      </div>
+    </footer>
+
+  <script src="js/main.js"></script>
 </body>
+
 </html>

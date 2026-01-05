@@ -2,24 +2,24 @@
 const blogs = [
   {
     id: 1, 
-    title: "How to Build a Responsive Blog Card",
-    image: "https://www.hcah.in/media/services-no-background/caregiver.webp",
-    description: "Learn how to design and code a beautiful responsive blog card using HTML, CSS, and JavaScript.",
-    full: "In this tutorial, we'll go step-by-step through building a responsive blog card layout using HTML, CSS grid, and a bit of JavaScript for interactivity..."
+    title: "How home health care improves recovery after surgery",
+    image: "https://media.istockphoto.com/id/2211174570/photo/happy-senior-woman-walking-with-help-of-female-caregiver-during-a-home-visit.webp?a=1&b=1&s=612x612&w=0&k=20&c=AURV-DmAFyG0_ba2Oh7uyreSvvvms-HF-nzZ_gkx23A=",
+    description: "Home health care speeds up post-surgery recovery through personalized nursing, medication management, and therapy at home, ensuring comfort, safety, and reduced risk of infection or hospital readmission.",
+    full: "Home health care speeds up post-surgery recovery through personalized nursing, medication management, .... "
   },
   {
     id: 2,
-    title: "Top 10 JavaScript Tips for Developers",
-    image: "https://www.hcah.in/media/services-no-background/caregiver.webp",
-    description: "Discover the most useful tips and tricks to improve your JavaScript coding skills.",
-    full: "JavaScript is one of the most versatile languages on the web. Here are 10 pro tips that can help you write cleaner and more efficient JS code..."
+    title: "Elderly Care – Dementia Care, Mobility, Emotional Support",
+    image: "https://media.istockphoto.com/id/2216846787/photo/daughter-assisting-senior-woman-with-walker-at-home.webp?a=1&b=1&s=612x612&w=0&k=20&c=ANvouZb-eHAOtbRJtxzRPOWYSeKqe0tGjDNmYSjJeD4=",
+    description: "Home health care for seniors focuses on compassionate dementia support, safe mobility assistance, and emotional care—helping older adults maintain independence, dignity, and a better quality of life at home.",
+    full: "Home health care for seniors focuses on compassionate dementia support, safe mobility assistance, and emotional care—helping "
   },
   {
     id: 3,
-    title: "Modern CSS Layouts with Grid and Flexbox",
-    image: "https://www.hcah.in/media/services-no-background/caregiver.webp",
-    description: "Understand the power of modern CSS layout systems and how to combine them effectively.",
-    full: "Flexbox and CSS Grid are the foundation of responsive design. Learn how to master them together for maximum control..."
+    title: "Post-Surgery & Rehabilitation – Wound Care, Physiotherapy, Pain Management",
+    image: "https://plus.unsplash.com/premium_photo-1681995477881-562c8ced6e3e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAyfHxob21lJTIwaGVhbHRoY2FyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600",
+    description: "Home health care aids recovery after surgery through expert wound care, personalized physiotherapy, and effective pain management—promoting faster healing, comfort, and a safe return to daily activities.",
+    full: "Home health care aids recovery after surgery through expert wound care, personalized physiotherapy, and effective pain management.."
   }
 ];
 

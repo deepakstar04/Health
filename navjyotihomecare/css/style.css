@@ -35,27 +35,46 @@ body {
 
 /* Logo Area */
 .logo-area {
+  display: flex;
+  align-items: center;
+
+  .logo-link {
     display: flex;
     align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .logo-img {
+    width: 100px;
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .company-name {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+    font-family: "Poppins", sans-serif;
+
+    .company-main {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+
+    .company-sub {
+      font-size: 0.6rem;
+      text-align: center;
+      font-weight: 700;
+      color: #0f6241;
+      letter-spacing: 0.5px;
+    }
+  }
 }
 
-.logo-img {
-    height: 60px; /* Adjust based on actual logo */
-    margin-right: 10px;
-}
-
-.company-name {
-  margin-bottom: -50px;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #1a1a2e; /* Dark navy color */
-}
-.company-name p{
-    font-size: 0.7rem;
-    margin-top: -2px;
-    font-weight: 700;
-    color: #098105; /* Teal color */
-}
 /* Header Actions (Button & Toggle) */
 .header-actions {
     display: flex;

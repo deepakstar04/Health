@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skilled Nursing Services at Home | Professional Home Healthcare</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="Professional skilled nursing services at home including medication management, wound care, chronic disease management, and compassionate in-home nursing support.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- <link rel="stylesheet" href="/css/services.css" /> -->
+    <!-- <link rel="stylesheet" href="/css/blog.css" /> -->
+    <link rel="stylesheet" href="/css/footer.css" />    
+
+
+    <style>
+      
+        .hero {
+            background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+                        url('https://images.unsplash.com/photo-1580281657521-6d63b1c94e1b') center/cover no-repeat;
+            color: #fff;
+            padding: 120px 20px;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .service-card {
+            border: none;
+            border-radius: 14px;
+            transition: all .3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,.1);
+        }
+
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            background-color: #0d6efd;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        .staff-img {
+            border-radius: 16px;
+        }
+    </style>
+</head>
+<body>
+<!-- ## Header Section for Nursing Services Website -->
+  <header class="main-header">
+    <div class="container header-content">
+      <div class="logo-area">
+        <a href="/" class="logo-link" aria-label="Navjyoti Home Care">
+          <img src="/assest/img/logo.png" alt="Navjyoti Home Care Logo" class="logo-img" />
+          <span class="company-name">
+            <span class="company-main">Navjyoti</span>
+            <span class="company-sub">Home Care</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="header-actions">
+        <a href="#" class="btn-book-nurse">Book a Nurse</a>
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-drawer-overlay" id="drawerOverlay"></div>
+  <nav class="nav-drawer" id="navDrawer">
+    <div class="drawer-header">
+      <button class="close-drawer" id="closeDrawer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="drawer-menu">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/skilled-nursing.html" class="active">About Us</a></li>
+
+      <li class="has-dropdown">
+        <a href="#" class="dropdown-toggle">
+          Nursing Services
+          <i class="fa-solid fa-chevron-down arrow-icon"></i>
+        </a>
+        <ul class="sub-menu">
+          <li><a href="#">Elderly Care</a></li>
+          <li><a href="#">Post-Operative Care</a></li>
+        </ul>
+      </li>
+
+      <li class="has-dropdown">
+        <a href="#" class="dropdown-toggle">
+          Patient Care Services
+          <i class="fa-solid fa-chevron-down arrow-icon"></i>
+        </a>
+        <ul class="sub-menu">
+          <li><a href="#">Service A</a></li>
+          <li><a href="#">Service B</a></li>
+        </ul>
+      </li>
+
+      <li class="has-dropdown">
+        <a href="#" class="dropdown-toggle">
+          Gallery
+          <i class="fa-solid fa-chevron-down arrow-icon"></i>
+        </a>
+        <ul class="sub-menu">
+          <li><a href="#">Photos</a></li>
+          <li><a href="#">Videos</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="#" class="dropdown-toggle">
+          Blogs
+          <i class="fa-solid fa-chevron-down arrow-icon"></i>
+        </a>
+        <ul class="sub-menu">
+          <li><a href="#">Latest News</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+
+<!-- ## Header Section Ends Here -->    
+
+<!-- HERO SECTION -->
+ <section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold mb-4" data-aos="fade-up">
+            Skilled Nursing Services at Home
+        </h1>
+        <p class="lead mb-4" data-aos="fade-up" data-aos-delay="150">
+            High-quality, licensed nursing care delivered safely and compassionately in your home.
+        </p>
+        <a href="#" class="btn btn-primary btn-lg" data-aos="zoom-in" data-aos-delay="300">
+            Get In-Home Nursing Care
+        </a>
+    </div>
+ </section>
+
+<!-- SERVICES -->
+ <section class="section-padding">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold" data-aos="fade-up">
+                Our In-Home Skilled Nursing Services
+            </h2>
+            <p class="text-muted" data-aos="fade-up" data-aos-delay="100">
+                Comprehensive medical care provided by registered and licensed practical nurses.
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card service-card p-4 text-center h-100">
+                    <div class="icon-box mx-auto">💊</div>
+                    <h3 class="h5 fw-semibold">Medication Management</h3>
+                    <p class="text-muted">
+                        Accurate medication administration, monitoring side effects, and patient education to ensure safety and compliance.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+                <div class="card service-card p-4 text-center h-100">
+                    <div class="icon-box mx-auto">🩺</div>
+                    <h3 class="h5 fw-semibold">Chronic Disease Management</h3>
+                    <p class="text-muted">
+                        Ongoing nursing care for diabetes, heart disease, COPD, and other long-term medical conditions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card service-card p-4 text-center h-100">
+                    <div class="icon-box mx-auto">🩹</div>
+                    <h3 class="h5 fw-semibold">Wound & Post-Surgical Care</h3>
+                    <p class="text-muted">
+                        Expert wound care, infection prevention, and recovery support following surgery or injury.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+
+<!-- NURSING STAFF SUPPORT -->
+ <section class="section-padding bg-white">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-md-6" data-aos="fade-right">
+                <img src="https://images.unsplash.com/photo-1584515933487-779824d29309"
+                     alt="Professional home healthcare nursing staff"
+                     class="img-fluid staff-img">
+            </div>
+
+            <div class="col-md-6" data-aos="fade-left">
+                <h2 class="fw-bold mb-4">
+                    Supporting Our Skilled Nursing Professionals
+                </h2>
+                <p class="text-muted mb-3">
+                    Our nurses are the foundation of exceptional patient care. We ensure they have the support, tools, and flexibility needed to succeed.
+                </p>
+
+                <ul class="list-unstyled">
+                    <li class="mb-2">✔ Flexible home-care schedules</li>
+                    <li class="mb-2">✔ Ongoing clinical training & education</li>
+                    <li class="mb-2">✔ 24/7 supervisory and medical support</li>
+                    <li class="mb-2">✔ Advanced care documentation tools</li>
+                </ul>
+
+                <a href="#" class="btn btn-outline-primary mt-3">
+                    Apply as a Home Care Nurse
+                </a>
+            </div>
+        </div>
+    </div>
+ </section>
+
+<!-- FOOTER SECTION -->
+ <footer class="site-footer">
+  <div class="footer-container">
+    <!-- About -->
+    <div class="footer-box">
+      <h3>Navjyoti Home Care</h3>
+      <p>
+        Providing trusted home nursing, elderly care, and medical assistance
+        services with compassion and professionalism at your doorstep.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-box">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-box">
+      <h4>Our Services</h4>
+      <ul>
+        <li>Home Nursing Care</li>
+        <li>Elderly Care</li>
+        <li>Post-Surgery Care</li>
+        <li>Physiotherapy at Home</li>
+        <li>Medical Attendants</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-box">
+      <h4>Contact Us</h4>
+      <p>📍 Delhi NCR, India</p>
+      <p>📞 +91 98765 43210</p>
+      <p>✉️ info@navjyotihomecare.com</p>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>
+      © <span id="year"></span> Navjyoti Home Care. All Rights Reserved.
+    </p>
+  </div>
+ </footer>
+<!-- FOOTER SECTION ENDS HERE -->
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 900,
+        once: true,
+        easing: 'ease-in-out'
+    });
+</script>
+
+<script type="module" src="js/script.js"></script>
+<script type="module" src="js/services.js"></script>
+<script type="module" src="js/blog.js"></script>
+<script type="module" src="js/reviw.js"></script>
+</body>
+</html>

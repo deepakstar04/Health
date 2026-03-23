@@ -237,21 +237,11 @@ body {
     .btn-book-nurse {
         display: none;
     }
-    
-    .company-name {
-        font-size: 1.3rem;
-    }
 }
-
-
-
 /* Header Styles End */
 
 
 /* Hero Section Styles Start  */
-
-
-/* Hero */
 
 .hero {
   display: flex;
